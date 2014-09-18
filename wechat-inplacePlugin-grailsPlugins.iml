@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$user_profile_path__defaults_at_documents_and_settings__username$/.grails/2.2.5/projects/grails-wechat/plugins/release-2.2.1">
+      <sourceFolder url="file://$user_profile_path__defaults_at_documents_and_settings__username$/.grails/2.2.5/projects/grails-wechat/plugins/release-2.2.1/src/java" isTestSource="false" />
+      <sourceFolder url="file://$user_profile_path__defaults_at_documents_and_settings__username$/.grails/2.2.5/projects/grails-wechat/plugins/release-2.2.1/src/groovy" isTestSource="false" />
+    </content>
+    <content url="file://$user_profile_path__defaults_at_documents_and_settings__username$/.grails/2.2.5/projects/grails-wechat/plugins/rest-client-builder-1.0.3">
+      <sourceFolder url="file://$user_profile_path__defaults_at_documents_and_settings__username$/.grails/2.2.5/projects/grails-wechat/plugins/rest-client-builder-1.0.3/src/groovy" isTestSource="false" />
+    </content>
+    <content url="file://$user_profile_path__defaults_at_documents_and_settings__username$/.grails/2.2.5/projects/grails-wechat/plugins/tomcat-2.2.5" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-2.2.5" level="application" />
+    <orderEntry type="module-library" exported="">
+      <library name="Grails User Library (wechat-inplacePlugin-grailsPlugins)">
+        <CLASSES>
+          <root url="jar://$user_profile_path__defaults_at_documents_and_settings__username$/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.7.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

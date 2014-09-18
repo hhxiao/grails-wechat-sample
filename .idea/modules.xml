@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/grails-wechat-sample.iml" filepath="$PROJECT_DIR$/grails-wechat-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grails-wechat-sample-grailsPlugins.iml" filepath="$PROJECT_DIR$/grails-wechat-sample-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wechat-inplacePlugin.iml" filepath="$PROJECT_DIR$/wechat-inplacePlugin.iml" />
+    </modules>
+  </component>
+</project>
+
