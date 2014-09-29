@@ -91,6 +91,6 @@ log4j = {
            'net.sf.ehcache.hibernate'
 }
 
-wechat.api.app.id=''
-wechat.api.app.secret=''
-
+grails.wechat.app.id='wx4535f5abda9e428f'
+grails.wechat.app.secret='8563f7273c40f1034a2d44f584cebd20'
+grails.wechat.app.token='zero926118661'

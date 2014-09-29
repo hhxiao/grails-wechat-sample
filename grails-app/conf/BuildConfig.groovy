@@ -38,16 +38,12 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
         // runtime 'mysql:mysql-connector-java:5.1.20'
-        compile 'com.fasterxml.jackson.core:jackson-databind:2.4.2'
-        compile 'com.fasterxml.jackson.core:jackson-core:2.4.2'
-        compile 'com.fasterxml.jackson.core:jackson-annotations:2.4.2'
-        compile 'org.apache.httpcomponents:httpclient:4.2.5'
     }
 
     plugins {
         runtime ":hibernate:$grailsVersion"
         runtime ":jquery:1.8.0"
-        runtime ":resources:1.2.RC2"
+        runtime ":resources:1.2"
 
         build ":tomcat:$grailsVersion"
     }
