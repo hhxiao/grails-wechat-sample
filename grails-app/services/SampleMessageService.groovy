@@ -23,7 +23,7 @@ class SampleMessageService {
         ))
     }
 
-    @MessageHandler(value=MsgType.location)
+    @MessageHandler(MsgType.location)
     ResponseMessage onLocationReceived(LocationMessage message) {
         wechatResponseService.responseText(message, "收到位置消息: ${message.label}")
     }
@@ -46,5 +46,11 @@ class SampleMessageService {
     @MessageHandler(value=MsgType.event, events=[EventType.LOCATION])
     ResponseMessage onLocationEvent(EventMessage message) {
         wechatResponseService.responseText(message, "收到位置事件: ${message.latitude}:${message.longitude}:${message.precision}")
+    }
+
+    ResponseMessage onMessage(Message message) {
+        // handl the message ...
+        System.out.println("Got a ${message.msgType} message")
+        return null // return null to use response message from other callback
     }
 }
