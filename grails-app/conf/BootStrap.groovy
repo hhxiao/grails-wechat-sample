@@ -56,19 +56,6 @@ class BootStrap {
 <ToUserName><![CDATA[toUser]]></ToUserName>
 <FromUserName><![CDATA[fromUser]]></FromUserName>
 <CreateTime>1351776360</CreateTime>
-<MsgType><![CDATA[location]]></MsgType>
-<Location_X>23.134521</Location_X>
-<Location_Y>113.358803</Location_Y>
-<Scale>20</Scale>
-<Label><![CDATA[位置信息]]></Label>
-<MsgId>1234567890123456</MsgId>
-</xml> """))
-
-        println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
-<xml>
-<ToUserName><![CDATA[toUser]]></ToUserName>
-<FromUserName><![CDATA[fromUser]]></FromUserName>
-<CreateTime>1351776360</CreateTime>
 <MsgType><![CDATA[link]]></MsgType>
 <Title><![CDATA[公众平台官网链接]]></Title>
 <Description><![CDATA[公众平台官网链接]]></Description>
@@ -80,7 +67,7 @@ class BootStrap {
         println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
 <xml>
 <ToUserName><![CDATA[toUser]]></ToUserName>
-<FromUserName><![CDATA[FromUser]]></FromUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
 <CreateTime>123456789</CreateTime>
 <MsgType><![CDATA[event]]></MsgType>
 <Event><![CDATA[subscribe]]></Event>
@@ -89,7 +76,7 @@ class BootStrap {
         println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
 <xml>
 <ToUserName><![CDATA[toUser]]></ToUserName>
-<FromUserName><![CDATA[FromUser]]></FromUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
 <CreateTime>123456789</CreateTime>
 <MsgType><![CDATA[event]]></MsgType>
 <Event><![CDATA[unsubscribe]]></Event>
@@ -97,7 +84,7 @@ class BootStrap {
 
         println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
 <xml><ToUserName><![CDATA[toUser]]></ToUserName>
-<FromUserName><![CDATA[FromUser]]></FromUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
 <CreateTime>123456789</CreateTime>
 <MsgType><![CDATA[event]]></MsgType>
 <Event><![CDATA[subscribe]]></Event>
@@ -109,7 +96,21 @@ class BootStrap {
         println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
 <xml>
 <ToUserName><![CDATA[toUser]]></ToUserName>
-<FromUserName><![CDATA[FromUser]]></FromUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
+<CreateTime>1351776360</CreateTime>
+<MsgType><![CDATA[location]]></MsgType>
+<Location_X>23.134521</Location_X>
+<Location_Y>113.358803</Location_Y>
+<Scale>20</Scale>
+<Label><![CDATA[位置信息]]></Label>
+<MsgId>1234567890123456</MsgId>
+</xml>
+ """))
+
+        println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
+<xml>
+<ToUserName><![CDATA[toUser]]></ToUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
 <CreateTime>123456789</CreateTime>
 <MsgType><![CDATA[event]]></MsgType>
 <Event><![CDATA[SCAN]]></Event>
@@ -121,18 +122,18 @@ class BootStrap {
         println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
 <xml>
 <ToUserName><![CDATA[toUser]]></ToUserName>
-<FromUserName><![CDATA[FromUser]]></FromUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
 <CreateTime>123456789</CreateTime>
 <MsgType><![CDATA[event]]></MsgType>
 <Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[EVENTKEY]]></EventKey>
+<EventKey><![CDATA[ITEM1]]></EventKey>
 </xml>
  """))
 
         println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
 <xml>
 <ToUserName><![CDATA[toUser]]></ToUserName>
-<FromUserName><![CDATA[FromUser]]></FromUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
 <CreateTime>123456789</CreateTime>
 <MsgType><![CDATA[event]]></MsgType>
 <Event><![CDATA[VIEW]]></Event>
@@ -140,6 +141,18 @@ class BootStrap {
 </xml>
  """))
 
+        println wechatHandlerService.handleMessage(MessageUtils.fromXml("""
+<xml>
+<ToUserName><![CDATA[toUser]]></ToUserName>
+<FromUserName><![CDATA[fromUser]]></FromUserName>
+<CreateTime>123456789</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>23.137466</Latitude>
+<Longitude>113.352425</Longitude>
+<Precision>119.385040</Precision>
+</xml>
+ """))
     }
 
     def destroy = {
